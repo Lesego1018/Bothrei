@@ -1,0 +1,672 @@
+/* responsive.css - Responsive Design for BOTHREI PRINTERS */
+
+/* Large Desktop Styles */
+@media (max-width: 1400px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop Styles */
+@media (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.8rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .tagline {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        order: 1;
+    }
+    
+    .contact-form {
+        order: 2;
+    }
+}
+
+/* Mobile Landscape Styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 1.5rem 0;
+    }
+    
+    .nav-menu a {
+        font-size: 1.2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        background-attachment: scroll;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.3rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 220px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .btn-whatsapp {
+        width: 220px;
+        justify-content: center;
+    }
+    
+    /* Sections */
+    section {
+        padding: 60px 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Service Cards */
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    /* Pricing Cards */
+    .pricing-card {
+        padding: 1.5rem;
+    }
+    
+    .pricing-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .price {
+        font-size: 1.1rem;
+    }
+    
+    /* Contact Section */
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .whatsapp-buttons {
+        flex-direction: column;
+    }
+    
+    .whatsapp-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Business Hours */
+    .business-hours p {
+        font-size: 0.95rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 3rem 1rem 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-whatsapp {
+        align-items: center;
+    }
+    
+    .footer-whatsapp-link {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-section ul {
+        text-align: center;
+    }
+    
+    .footer-section ul li a:hover {
+        padding-left: 0;
+    }
+    
+    /* WhatsApp Float */
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-main {
+        width: 55px;
+        height: 55px;
+        font-size: 1.8rem;
+    }
+    
+    .whatsapp-dropdown {
+        width: 200px;
+        right: 0;
+    }
+    
+    .whatsapp-option {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Scroll to Top */
+    .scroll-top {
+        bottom: 20px;
+        left: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    /* Pricing Note */
+    .pricing-note {
+        width: 100%;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-header p {
+        font-size: 0.95rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .service-card ul li {
+        font-size: 0.95rem;
+    }
+    
+    .feature {
+        padding: 1.5rem;
+    }
+    
+    .feature i {
+        font-size: 2rem;
+    }
+    
+    .feature h4 {
+        font-size: 1.1rem;
+    }
+    
+    .feature p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-info p {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
+    
+    .contact-info i {
+        font-size: 1rem;
+    }
+    
+    .whatsapp-btn {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+    
+    .form-notification {
+        left: 20px;
+        right: 20px;
+        width: auto;
+        font-size: 0.95rem;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+    
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .whatsapp-main {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+    
+    .whatsapp-dropdown {
+        width: 180px;
+    }
+    
+    .scroll-top {
+        bottom: 15px;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Very Small Mobile Styles */
+@media (max-width: 360px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        width: 200px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .service-card {
+        padding: 1.2rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .pricing-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .price-item {
+        font-size: 0.9rem;
+    }
+    
+    .price {
+        font-size: 1rem;
+    }
+    
+    .whatsapp-dropdown {
+        width: 160px;
+    }
+    
+    .whatsapp-option {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 1rem 50px;
+    }
+    
+    .nav-menu.active {
+        padding: 20px 0;
+    }
+    
+    .nav-menu li {
+        margin: 0.8rem 0;
+    }
+    
+    .whatsapp-dropdown {
+        bottom: 60px;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}
+
+/* Tablet Landscape Mode */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* High Resolution Screens */
+@media (min-width: 1920px) {
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+    
+    .tagline {
+        font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.4rem;
+        max-width: 900px;
+    }
+    
+    section {
+        padding: 100px 10%;
+    }
+    
+    .services-grid {
+        max-width: 1800px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .whatsapp-float,
+    .scroll-top,
+    .cta-buttons,
+    .contact-form,
+    .social-links,
+    footer {
+        display: none !important;
+    }
+    
+    body {
+        color: black;
+        background: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .hero {
+        height: auto;
+        background: none;
+        color: black;
+        padding: 20px;
+    }
+    
+    .hero-bothrei {
+        color: black;
+    }
+    
+    .hero-printers {
+        color: black;
+    }
+    
+    .tagline {
+        color: black;
+    }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    /* You can add dark mode styles here if needed */
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* Responsive Images */
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive Tables */
+@media (max-width: 768px) {
+    .price-list {
+        overflow-x: auto;
+    }
+}
+
+/* Responsive Form Elements */
+@media (max-width: 768px) {
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 16px; /* Prevents zoom on mobile */
+    }
+}
+
+/* Responsive Padding/Margin Adjustments */
+@media (max-width: 768px) {
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .pricing-note {
+        margin-top: 2rem;
+    }
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 768px) {
+    .services-grid,
+    .pricing-grid,
+    .features {
+        gap: 1rem;
+    }
+}
+
+/* Responsive Card Adjustments */
+@media (max-width: 768px) {
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .pricing-card:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Responsive WhatsApp Integration */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 70px; /* Above any mobile navigation */
+    }
+    
+    .whatsapp-dropdown {
+        bottom: 60px;
+    }
+}
+
+/* Responsive Business Hours */
+@media (max-width: 480px) {
+    .business-hours p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-section ul li {
+        margin-bottom: 0.8rem;
+    }
+    
+    .footer-whatsapp {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .service-card:hover,
+    .pricing-card:hover,
+    .feature:hover,
+    .btn:hover {
+        transform: none;
+    }
+    
+    .whatsapp-float:hover .whatsapp-dropdown {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .whatsapp-float.active .whatsapp-dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .whatsapp-main {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
